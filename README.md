@@ -1,4 +1,4 @@
-checkout the live demo[Live demo](https://riot-match-history.vercel.app/) 
+checkout the live demo [Live demo](https://riot-match-history.vercel.app/) 
 
 _Note: this live demo rely on short lived API key. You might not be able to search. Just contact me and i ll be happy to provide a working api key_
 ## Getting Started
