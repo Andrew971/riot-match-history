@@ -166,7 +166,7 @@ class MatchHistoryService {
     try {
       const playerInfo = await this.getPlayerInfoByName(this.searchTerm)
       const matchHistory = await this.getMatchHistoryByPlayer(playerInfo.puuid)
-
+      if (!Array.isArray(matchHistory)) throw new Error ('An Error occured')
       const history = await Promise.all(
         matchHistory.map(async (matchId: string) => {
           const matchInfo = await this.getMatchInfoByMatchId(matchId)
